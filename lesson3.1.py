@@ -6,4 +6,11 @@ def rin(h):
 
 h = raw_input('Введите предложение:\n')
 rin(h)
-#it needs some work
+def involution(*args):
+    x = 1
+    for arg in args:
+        y=arg
+        y**=x
+        x=arg
+        print(y)
+involution(2,5,2,8)
